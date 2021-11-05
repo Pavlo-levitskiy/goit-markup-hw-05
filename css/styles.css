@@ -8,6 +8,7 @@ body {
 :root {
   --blue: #2196f3;
   --grey: #757575;
+  --blue-button: #188ce8;
   --primery-text-color: #212121;
   --white-color: #ffffff;
   --dark-grey: #2f303a;
@@ -173,8 +174,14 @@ img {
 
 .contacts-link {
   margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 
+.contacts-tel {
+  display: flex;
+  align-items: center;
+}
 /* ------------Hero--------------- */
 
 .hero {
@@ -246,9 +253,17 @@ img {
   font-size: 16px;
   line-height: 1.875em;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  height: 50px;
   border-radius: 4px;
+  padding: 10px 30px;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--blue-button);
+}
+
+.hidden-title {
+  display: none;
 }
 
 .list-text:not(:last-child) {
